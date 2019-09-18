@@ -4,6 +4,7 @@ import argparse
 import cv2
 
 
+# method to save labor
 def plot_histogram(image, title, mask=None):
     chans = cv2.split(image)
     colors = 'b', 'g', 'r'
