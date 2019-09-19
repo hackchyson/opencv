@@ -26,8 +26,8 @@ cv2.imshow('Laplacian', lap)
 
 sobel_x = cv2.Sobel(image, cv2.CV_64F, 1, 0)
 sobel_y = cv2.Sobel(image, cv2.CV_64F, 0, 1)
-cv2.imshow('Sobel X without absolute', np.uint8(sobel_x))
-cv2.imshow('Sobel X without All', sobel_x)
+# cv2.imshow('Sobel X without absolute', np.uint8(sobel_x))
+# cv2.imshow('Sobel X without All', sobel_x)
 
 sobel_x = np.uint8(np.absolute(sobel_x))
 sobel_y = np.uint8(np.absolute(sobel_y))
