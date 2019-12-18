@@ -24,4 +24,8 @@ zeros = np.zeros(image.shape[:2], dtype='uint8')
 cv2.imshow('Red', cv2.merge([zeros, zeros, r]))
 cv2.imshow('Green', cv2.merge([zeros, g, zeros]))
 cv2.imshow('Blue', cv2.merge([b, zeros, zeros]))
+
+cv2.imwrite('red.jpg', cv2.merge([zeros, zeros, r]))
+cv2.imwrite('green.jpg', cv2.merge([zeros, g, zeros]))
+cv2.imwrite('blue.jpg', cv2.merge([b, zeros, zeros]))
 cv2.waitKey()
